@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apollo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f1115;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0 0 8px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #9ca3af;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #191c23;
+  border: 1px solid #2b303a;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #111318;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#message {
+  margin-top: 16px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+  </style>
+</head><body>
+  <main class="app">
+    <h1>APOLLO</h1>
+    <div class="subtitle">Deine persönliche App</div><div class="card">
+  <h2>Willkommen</h2>
+  <p>Die erste Version von Apollo läuft.</p>
+  <button onclick="startApollo()">Apollo starten</button>
+  <div id="message"></div>
+</div>
+
+  </main>  <script>
+    function startApollo() {
+      document.getElementById("message").textContent =
+        "Apollo ist bereit. 🚀";
+    }
+  </script></body>
+</html>
